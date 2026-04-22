@@ -1,20 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTasks</title>
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>YourTasks</h1>
+        <h1>YourTasks</h1>
 
-    <input type="text" id="taskInput" placeholder="Digite uma tarefa">
-    <button onclick="addTask()">Adicionar</button>
+        <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+        <button onclick="addTask()">Adicionar</button>
 
-    <div>
-        <button onclick="filterTasks('all')">Todas</button>
-        <button onclick="filterTasks('pending')">Pendentes</button>
-        <button onclick="filterTasks('done')">Concluídas</button>
+        <div>
+            <button onclick="filterTasks('all')">Todas</button>
+            <button onclick="filterTasks('pending')">Pendentes</button>
+            <button onclick="filterTasks('done')">Concluídas</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
     </div>
 
-    <ul id="taskList"></ul>
-
-</div>
+    <script src="Js/Script.js"></script>
 
 </body>
+
+</html>
